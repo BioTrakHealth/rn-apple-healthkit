@@ -70,6 +70,8 @@
     // Vital Signs Identifiers
     if ([@"HeartRate" isEqualToString: key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
+    }else if ([@"HeartRateVariability" isEqualToString: key]) {
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRateVariabilitySDNN];
     }else if ([@"BodyTemperature" isEqualToString: key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyTemperature];
     }else if ([@"BloodPressureSystolic" isEqualToString: key]) {
@@ -213,7 +215,11 @@
     } else if([@"Water" isEqualToString:key]) {
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDietaryWater];
     }
-    
+    // Vital Signs Identifiers
+    if ([@"HeartRateVariability" isEqualToString: key]) {
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRateVariabilitySDNN];
+    }
+
     // Sleep
     if([@"SleepAnalysis" isEqualToString:key]) {
         return [HKObjectType categoryTypeForIdentifier:HKCategoryTypeIdentifierSleepAnalysis];
