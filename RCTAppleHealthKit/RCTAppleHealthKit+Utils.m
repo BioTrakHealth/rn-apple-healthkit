@@ -172,6 +172,9 @@
     if([unitString isEqualToString:@"foot"]){
         theUnit = [HKUnit footUnit];
     }
+    if([unitString isEqualToString:@"ms"]){
+        theUnit = [HKUnit secondUnitWithMetricPrefix:HKMetricPrefixMilli];
+    }
     if([unitString isEqualToString:@"second"]){
         theUnit = [HKUnit secondUnit];
     }

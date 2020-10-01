@@ -93,6 +93,7 @@ Height Example Response
       * [getDistanceWalkingRunning](/docs/getDistanceWalkingRunning().md)
       * [getFlightsClimbed](/docs/getFlightsClimbed().md)
       * [getHeartRateSamples](/docs/getHeartRateSamples().md)
+      * [getHeartRateVariabilitySamples](/docs/getHeartRateVariabilitySamples().md)
       * [getHeightSamples](/docs/getHeightSamples().md)
       * [getLatestBmi](/docs/getLatestBmi().md)
       * [getLatestBodyFatPercentage](/docs/getLatestBodyFatPercentage().md)
@@ -106,7 +107,7 @@ Height Example Response
       * [getStepCount](/docs/getStepCount().md)
       * [getWeightSamples](/docs/getWeightSamples().md)
       * [getSamples](docs/getSamples().md)
-      * [getMindfulSession](docs/getMindfulSession().md) 
+      * [getMindfulSession](docs/getMindfulSession().md)
     * Write Methods
       * [saveBmi](/docs/saveBmi().md)
       * [saveHeight](/docs/saveHeight().md)
@@ -136,6 +137,7 @@ The available Healthkit permissions to use with `initHealthKit`
 | DistanceWalkingRunning | [HKQuantityTypeIdentifierDistanceWalkingRunning](https://developer.apple.com/reference/Healthkit/hkquantitytypeidentifierdistancewalkingrunning?language=objc)     | ✓    | ✓     |
 | FlightsClimbed         | [HKQuantityTypeIdentifierFlightsClimbed](https://developer.apple.com/reference/Healthkit/hkquantitytypeidentifierflightsclimbed?language=objc)                     | ✓    | ✓     |
 | HeartRate              | [HKQuantityTypeIdentifierHeartRate](https://developer.apple.com/reference/Healthkit/hkquantitytypeidentifierheartrate?language=objc)                               | ✓    |       |
+| HeartRateVariability   | [HKQuantityTypeIdentifierHeartRateVariabilitySDNN](https://developer.apple.com/reference/Healthkit/hkquantitytypeidentifierheartratevariabilitysdnn?language=objc)                               | ✓    |       |
 | Height                 | [HKQuantityTypeIdentifierHeight](https://developer.apple.com/reference/Healthkit/hkquantitytypeidentifierheight?language=objc)                                     | ✓    | ✓     |
 | LeanBodyMass           | [HKQuantityTypeIdentifierLeanBodyMass](https://developer.apple.com/reference/Healthkit/hkquantitytypeidentifierleanbodymass?language=objc)                         | ✓    | ✓     |
 | MindfulSession         | [HKCategoryTypeIdentifierMindfulSession](https://developer.apple.com/reference/healthkit/hkcategorytypeidentifiermindfulsession?language=objc)                     |      |  ✓    |
